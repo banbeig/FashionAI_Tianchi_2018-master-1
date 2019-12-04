@@ -1,7 +1,7 @@
 import os
 # 2 gpus
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
-
+#git
 # path to train and test labels
 TRAIN_LABEL_DIR = r'D:\BaiduNetdiskDownload\Fashion_AI_Clothing attribute label\fashionAI_attributes_train1\Annotations\label_1.csv'
 TEST_LABEL_DIR = 'datasets/final-rank/Tests/question.csv'
