@@ -3,17 +3,17 @@ import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1'
 
 # path to train and test labels
-TRAIN_LABEL_DIR = 'F:/BaiduNetdiskDownload/Fashion_AI_Clothing attribute label/fashionAI_attributes_train1/Annotations/label_1.csv'
+TRAIN_LABEL_DIR = r'D:\BaiduNetdiskDownload\Fashion_AI_Clothing attribute label\fashionAI_attributes_train1\Annotations\label_1.csv'
 TEST_LABEL_DIR = 'datasets/final-rank/Tests/question.csv'
 
-TRAIN_LENGTH_LABEL_DIR = 'F:/BaiduNetdiskDownload/Fashion_AI_Clothing attribute label/train_length_2.csv'
-TRAIN_DESIGN_LABEL_DIR = 'F:/BaiduNetdiskDownload/Fashion_AI_Clothing attribute label/train_design_2.csv'
+TRAIN_LENGTH_LABEL_DIR = 'D:/BaiduNetdiskDownload/Fashion_AI_Clothing attribute label/train_length_2.csv'
+TRAIN_DESIGN_LABEL_DIR = 'D:/BaiduNetdiskDownload/Fashion_AI_Clothing attribute label/train_design_2.csv'
 # 原始
 # TEST_DESIGN_LABEL_DIR = 'labels/test_design.csv'
 # TEST_LENGTH_LABEL_DIR = 'labels/test_length.csv'
 
 # path to train and test images
-TRAIN_IMG_DIR = 'F:/BaiduNetdiskDownload/Fashion_AI_Clothing attribute label/fashionAI_attributes_train1/'
+TRAIN_IMG_DIR = 'D:/BaiduNetdiskDownload/Fashion_AI_Clothing attribute label/fashionAI_attributes_train1/'
 TEST_IMG_DIR =  'datasets/final-rank/'
 
 # path to trianed models
