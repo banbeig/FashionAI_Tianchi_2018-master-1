@@ -97,7 +97,7 @@ def process(aug,model,width,fnames_test,n_test):
     del X_test
     return y_pred
 
-# data augmentation
+# data augmentation 图像增强
 def customizedImgAug(input_img):
     rarely = lambda aug: iaa.Sometimes(0.1, aug)
     sometimes = lambda aug: iaa.Sometimes(0.25, aug)
