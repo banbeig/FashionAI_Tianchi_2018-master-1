@@ -21,28 +21,28 @@ def process(aug,model,width,fnames_test,n_test):
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'flip'):
+    elif (aug == 'flip'):# 翻转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = cv2.flip(img, 1)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate1'):
+    elif (aug == 'rotate1'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = rotate(img, 5)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate2'):
+    elif (aug == 'rotate2'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = rotate(img, -5)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate3'):
+    elif (aug == 'rotate3'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = cv2.flip(img, 1)
             img = rotate(img, 5)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate4'):
+    elif (aug == 'rotate4'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = cv2.flip(img, 1)
@@ -53,40 +53,40 @@ def process(aug,model,width,fnames_test,n_test):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = rotate(img, 13)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate6'):
+    elif (aug == 'rotate6'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = rotate(img, -13)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate7'):
+    elif (aug == 'rotate7'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = cv2.flip(img, 1)
             img = rotate(img, 13)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate8'):
+    elif (aug == 'rotate8'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = cv2.flip(img, 1)
             img = rotate(img, -13)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate9'):
+    elif (aug == 'rotate9'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = rotate(img, 21)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate10'):
+    elif (aug == 'rotate10'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = rotate(img, -21)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate11'):
+    elif (aug == 'rotate11'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = cv2.flip(img, 1)
             img = rotate(img, 21)
             X_test[i] = img[:, :, ::-1]
-    elif (aug == 'rotate12'):
+    elif (aug == 'rotate12'):# 旋转
         for i in tqdm(range(n_test)):
             img = cv2.resize(cv2.imread(TEST_IMG_DIR+'{0}'.format(fnames_test[i])), (width, width))
             img = cv2.flip(img, 1)
